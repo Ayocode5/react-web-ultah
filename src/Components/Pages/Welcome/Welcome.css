@@ -1,0 +1,228 @@
+.welcome-page {
+  background-image: url('../../../assets/images/thumbs/welcome-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ribbon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  animation: ribbon-slide 2s ease;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  z-index: 0;
+}
+
+.content-pic {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.title {
+  margin-top: 32px;
+}
+
+.celebrate-text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  font-family: 'Passion One', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.greeting {
+  margin-top: 64px;
+  width: 100%;
+  font-family: 'Passion One', cursive;
+}
+
+.greeting-text {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.greeting-hi {
+  text-align: center;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.greeting-name {
+  margin-top: 16px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 53px;
+  color: #e0f300;
+  animation: name-slide 2s ease;
+}
+
+.checkbox {
+  margin-top: 56px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-label {
+  font-family: 'Passion One', cursive;
+  font-style: normal;
+  font-size: 18px;
+  text-align: justify;
+  color: #464646;
+  margin-left: 14px;
+}
+
+.btn-wrapper {
+  margin-top: 16px;
+}
+
+.btn {
+  width: 100%;
+  cursor: pointer;
+  height: 55px;
+  font-family: 'Passion One', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #787777;
+  background: #a6adb4;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.btn-active {
+  background: #007fff !important;
+  color: #f9fcff !important;
+}
+
+@keyframes name-slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes ribbon-slide {
+  0% {
+    margin-top: -100%;
+  }
+
+  100% {
+    margin-top: 0%;
+  }
+}
+
+.approve {
+  --background: #fff;
+  --border: #464646;
+  --border-hover: #ffffff;
+  --border-active: #1e2235;
+  --tick: #fff;
+  position: relative;
+}
+
+.approve input,
+.approve svg {
+  width: 21px;
+  height: 21px;
+  display: block;
+}
+
+.approve input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+  -webkit-box-shadow: inset 0 0 0 var(--s, 2px) var(--b, var(--border));
+  box-shadow: inset 0 0 0 var(--s, 2px) var(--b, var(--border));
+}
+
+.approve input:hover {
+  --s: 2px;
+  --b: var(--border-hover);
+}
+
+.approve input:checked {
+  --b: var(--border-active);
+}
+
+.approve svg {
+  pointer-events: none;
+  fill: none;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--stroke, var(--border-active));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 21px;
+  -webkit-transform: scale(var(--scale, 1)) translateZ(0);
+  transform: scale(var(--scale, 1)) translateZ(0);
+}
+
+.approve.path input:checked {
+  --s: 2px;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+.approve.path input:checked + svg {
+  --a: 16.1 86.12;
+  --o: 102.22;
+}
+
+.approve.path svg {
+  stroke-dasharray: var(--a, 86.12);
+  stroke-dashoffset: var(--o, 86.12);
+  -webkit-transition: stroke-dasharray 0.6s, stroke-dashoffset 0.6s;
+  transition: stroke-dasharray 0.6s, stroke-dashoffset 0.6s;
+}
+
+.approve.bounce {
+  --stroke: var(--tick);
+}
+
+.approve.bounce input:checked {
+  --s: 11px;
+}
+
+.approve.bounce input:checked + svg {
+  -webkit-animation: bounce 0.4s linear forwards 0.2s;
+  animation: bounce 0.4s linear forwards 0.2s;
+}
+
+.approve.bounce svg {
+  --scale: 0;
+}

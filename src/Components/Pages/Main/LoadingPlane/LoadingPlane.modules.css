@@ -1,0 +1,84 @@
+.container__plane {
+  background-color: #73cfec;
+  height: 100%;
+  width: 100%;
+  animation: fade-out 5s ease-out;
+}
+
+.awan-wrapper {
+  max-width: 856px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.awan-top {
+  background: url('../../../../assets/images/icons/awan.svg') repeat-x;
+  background-size: contain;
+  width: 6400px;
+  height: 198px;
+  position: absolute;
+  transform: translate3d(0, 0, 0);
+  top: -10%;
+  animation: awan-top 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+}
+
+.awan-bottom {
+  background: url('../../../../assets/images/icons/awan.svg') repeat-x;
+  background-size: contain;
+  width: 6400px;
+  height: 198px;
+  position: absolute;
+  transform: translate3d(0, 0, 0);
+  bottom: -10%;
+  animation: awan-bottom 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+}
+
+.plane-img {
+  animation: plane 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+}
+
+@keyframes plane {
+  0% {
+    transform: rotate(0deg) scale(0.5);
+  }
+  25% {
+    transform: rotate(-30deg) scale(0.7);
+  }
+  50% {
+    transform: rotate(30deg) scale(1);
+  }
+  75% {
+    transform: rotate(-45deg) scale(1.3);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.5);
+  }
+}
+
+@keyframes awan-top {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+
+@keyframes awan-bottom {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
