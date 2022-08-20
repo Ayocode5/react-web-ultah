@@ -94,29 +94,60 @@ function Main() {
             </p>
           </section>
 
-          <section className="photos">
-            <figure>
-              <img className="photo" src={Image1} alt="baby 1" />
-            </figure>
-            <figure>
-              <img className="photo" src={Image2} alt="baby 2" />
-            </figure>
-            <figure>
-              <img className="photo" src={Image3} alt="baby 3" />
-            </figure>
-            <figure>
-              <img className="photo" src={Image4} alt="baby 4" />
-            </figure>
-            <figure>
-              <img className="photo" src={Image5} alt="baby 5" />
-            </figure>
-            <figure>
-              <img className="photo" src={Image6} alt="baby 6" />
-            </figure>
-            <figure>
-              <img className="photo" src={Image7} alt="baby 7" />
-            </figure>
+          <section id="section__photos">
+            <ul id="photos">
+              <li className="photo" id="photo_1">
+                <div className="photo__content">
+                  <figure>
+                    <img src={Image1} alt="baby 1" />
+                  </figure>
+                </div>
+              </li>
+              <li className="photo" id="photo_2">
+                <div className="photo__content">
+                  <figure>
+                    <img src={Image2} alt="baby 2" />
+                  </figure>
+                </div>
+              </li>
+              <li className="photo" id="photo_3">
+                <div className="photo__content">
+                  <figure>
+                    <img src={Image3} alt="baby 3" />
+                  </figure>
+                </div>
+              </li>
+              <li className="photo" id="photo_4">
+                <div className="photo__content">
+                  <figure>
+                    <img src={Image4} alt="baby 4" />
+                  </figure>
+                </div>
+              </li>
+              <li className="photo" id="photo_5">
+                <div className="photo__content">
+                  <figure>
+                    <img src={Image5} alt="baby 5" />
+                  </figure>
+                </div>
+              </li>
+              <li className="photo" id="photo_6">
+                <div className="photo__content">
+                  <figure>
+                    <img src={Image6} alt="baby 6" />
+                  </figure>
+                </div>
+              </li>
+              <li className="photo" id="photo_7">
+                <div className="photo__content">
+                  <figure>
+                    <img src={Image7} alt="baby 7" />
+                  </figure>
+                </div>
+              </li>
+            </ul>
           </section>
+
           <img className="icon-flag-2" src={FlagImg} alt="flag" />
 
           <section className="message">
