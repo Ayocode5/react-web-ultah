@@ -10,6 +10,7 @@ header {
   height: 100%;
   object-fit: cover;
   background-position: fixed;
+  object-position: top;
   filter: saturate(0.2) temperature(0.6) drop-shadow(0);
 }
 
@@ -308,5 +309,32 @@ figure img {
 @media screen and (min-width: 576px) {
   .icon-flag-2 {
     transform: translateY(-190px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__background {
+    object-fit: unset;
+    width: 50%;
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  }
+  header {
+    background-color: var(--background-color);
+  }
+  .container .wrapper__box {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .header__content .content h1 {
+    font-size: 48px;
+  }
+
+  .header__content .content p {
+    font-size: 38px;
+  }
+  .icon-tape {
+    top: 6px;
+    left: 37px;
   }
 }
