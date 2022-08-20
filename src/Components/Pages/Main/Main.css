@@ -116,11 +116,12 @@ header {
   font-weight: 400;
 }
 
-.box-more-detail {
+.box-location {
   font-family: 'Passion One', cursive;
   font-weight: 400;
   font-size: 16px;
   color: #007fff;
+  text-decoration: none;
 }
 
 .icon-flag {

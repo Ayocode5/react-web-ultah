@@ -68,9 +68,14 @@ function Main() {
             <div className="box">
               <p className="box-title">Location:</p>
               <p className="box-subtitle">Tamarin Nurseries Garden & Cafe</p>
-              <p className="box-more-detail">
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/place/Tamarin+Nurseries+Garden+%26+Cafe/@-6.2480897,106.7463335,15z/data=!4m5!3m4!1s0x0:0x5722837cd22ca824!8m2!3d-6.2480897!4d106.7463335"
+                className="box-location"
+                rel="noreferrer"
+              >
                 See Details <img src={ArrowRightImg} alt="detail" />
-              </p>
+              </a>
             </div>
             <div className="box">
               <p className="box-title">Dresscode:</p>
