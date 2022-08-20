@@ -261,7 +261,7 @@ header {
 
 .photo {
   position: sticky;
-  top: 88px;
+  top: 32px;
   padding-top: calc(var(--index) * var(--card-top-offset));
   transition: all 0.5s ease-in-out;
 }
