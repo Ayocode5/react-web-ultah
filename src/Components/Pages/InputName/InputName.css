@@ -1,0 +1,79 @@
+.input-name-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.input-name-page .container {
+  margin: 0 auto;
+  overflow: unset;
+}
+.input-name-page .container .content {
+  margin-top: 0;
+  overflow: unset;
+}
+
+.input-name-page .container .content h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 5px;
+}
+
+.input-name-page .container .content p {
+  color: rgb(205, 78, 78);
+}
+
+.card {
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 3px solid #212121;
+  animation: card-animation 3s ease-in-out infinite;
+}
+
+.input-name {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  display: block;
+  padding: 4px;
+  margin: 0 auto;
+  min-height: 44px;
+  font-size: 18px;
+}
+
+.btn-submit-name {
+  width: 100%;
+  min-height: 44px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #fab700;
+  border-radius: 4px;
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-in-out;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-submit-name:hover {
+  box-shadow: 0.2rem 0.2rem 0 #505050;
+}
+@keyframes card-animation {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0.5rem 0.5rem 0 #212121;
+  }
+  100% {
+    box-shadow: none;
+  }
+}
