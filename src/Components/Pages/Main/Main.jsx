@@ -22,6 +22,8 @@ function Main() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
+    document.body.style.overflow = 'hidden';
+
     const interval = setInterval(() => {
       setIsLoading(false);
       document.body.style.overflow = 'unset';

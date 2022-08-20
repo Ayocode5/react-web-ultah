@@ -1,7 +1,3 @@
-body {
-  overflow: hidden;
-}
-
 .loading__bounce {
   animation: loading__bounce 6s linear;
 }
