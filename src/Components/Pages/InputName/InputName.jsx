@@ -1,17 +1,21 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import MainFooter from '../../Footer/MainFooter';
-import './InputName.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import MainFooter from "../../Footer/MainFooter";
+import "./InputName.css";
+import laguPesawat from "../../../assets/sounds/lagu_pesawat.mp3";
 
 function InputName() {
   const navigate = useNavigate();
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
+
+  const audio = new Audio(laguPesawat);
 
   const handleSubmit = () => {
     if (name.length > 0 && name) {
       navigate(`${name}`, { replace: true });
+      audio.play();
     } else {
-      alert('Please enter your name!');
+      alert("Please enter your name!");
     }
   };
 

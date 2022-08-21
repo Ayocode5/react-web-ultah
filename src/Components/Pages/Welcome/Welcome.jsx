@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
-import LoadingBounce from './LoadingBounce/LoadingBounce';
-import RibbonImg from '../../../assets/images/icons/ribbon.svg';
-import BabyPicture from '../../../assets/images/thumbs/pic.png';
-import MainFooter from '../../Footer/MainFooter';
-import './Welcome.css';
+import React, { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import LoadingBounce from "./LoadingBounce/LoadingBounce";
+import RibbonImg from "../../../assets/images/icons/ribbon.svg";
+import BabyPicture from "../../../assets/images/thumbs/pic.png";
+import MainFooter from "../../Footer/MainFooter";
+import "./Welcome.css";
 
 function Welcome() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,16 +21,16 @@ function Welcome() {
     if (approve) {
       navigate(`/invitation/${params.name}`, { replace: true });
     } else {
-      alert('Please approve the terms and conditions');
+      alert("Please approve the terms and conditions");
     }
   };
 
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
 
     const interval = setInterval(() => {
       setIsLoading(false);
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }, 5000);
     return () => clearInterval(interval);
   }, []);
@@ -94,7 +94,7 @@ function Welcome() {
                 <button
                   disabled={approve ? false : true}
                   type="button"
-                  className={`btn ${approve ? 'btn-active' : ''}`}
+                  className={`btn ${approve ? "btn-active" : ""}`}
                   id="open"
                   onClick={handleButtonClick}
                 >

@@ -1,32 +1,33 @@
-import React, { useEffect, useState } from 'react';
-import LoadingPlane from './LoadingPlane/LoadingPlane';
-import MainFooter from '../../Footer/MainFooter';
-import BabyPicture from '../../../assets/images/thumbs/baby_pic.png';
-import ArrowLeftImg from '../../../assets/images/icons/icon_arrow-left.svg';
-import TapeImg from '../../../assets/images/icons/icon_tape.svg';
-import CakeImg from '../../../assets/images/icons/icon_cake.svg';
-import ArrowRightImg from '../../../assets/images/icons/icon_arrow-right.svg';
-import FlagImg from '../../../assets/images/icons/icon_flag.svg';
-import LoveImg from '../../../assets/images/icons/icon_love.svg';
-import Image1 from '../../../assets/images/thumbs/photo-1.png';
-import Image2 from '../../../assets/images/thumbs/photo-2.png';
-import Image3 from '../../../assets/images/thumbs/photo-3.png';
-import Image4 from '../../../assets/images/thumbs/photo-4.png';
-import Image5 from '../../../assets/images/thumbs/photo-5.png';
-import Image6 from '../../../assets/images/thumbs/photo-6.png';
-import Image7 from '../../../assets/images/thumbs/photo-7.png';
+import React, { useEffect, useState } from "react";
+import LoadingPlane from "./LoadingPlane/LoadingPlane";
+import MainFooter from "../../Footer/MainFooter";
+import BabyPicture from "../../../assets/images/thumbs/baby_pic.png";
+import ArrowLeftImg from "../../../assets/images/icons/icon_arrow-left.svg";
+import TapeImg from "../../../assets/images/icons/icon_tape.svg";
+import CakeImg from "../../../assets/images/icons/icon_cake.svg";
+import ArrowRightImg from "../../../assets/images/icons/icon_arrow-right.svg";
+import FlagImg from "../../../assets/images/icons/icon_flag.svg";
+import LoveImg from "../../../assets/images/icons/icon_love.svg";
+import Image1 from "../../../assets/images/thumbs/photo-1.png";
+import Image2 from "../../../assets/images/thumbs/photo-2.png";
+import Image3 from "../../../assets/images/thumbs/photo-3.png";
+import Image4 from "../../../assets/images/thumbs/photo-4.png";
+import Image5 from "../../../assets/images/thumbs/photo-5.png";
+import Image6 from "../../../assets/images/thumbs/photo-6.png";
+import Image7 from "../../../assets/images/thumbs/photo-7.png";
+import { MapContainer } from "../../Map/Map";
 
-import './Main.css';
+import "./Main.css";
 
 function Main() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
 
     const interval = setInterval(() => {
       setIsLoading(false);
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }, 5000);
     return () => clearInterval(interval);
   }, []);
@@ -68,12 +69,7 @@ function Main() {
             <div className="box">
               <p className="box-title">Location:</p>
               <p className="box-subtitle">Tamarin Nurseries Garden & Cafe</p>
-              <a
-                target="_blank"
-                href="https://www.google.com/maps/place/Tamarin+Nurseries+Garden+%26+Cafe/@-6.2480897,106.7463335,15z/data=!4m5!3m4!1s0x0:0x5722837cd22ca824!8m2!3d-6.2480897!4d106.7463335"
-                className="box-location"
-                rel="noreferrer"
-              >
+              <a href="#location" className="box-location">
                 See Details <img src={ArrowRightImg} alt="detail" />
               </a>
             </div>
@@ -154,6 +150,32 @@ function Main() {
           </section>
 
           <img className="icon-flag-2" src={FlagImg} alt="flag" />
+
+          <section className="location" id="location">
+            <span className="striped striped-1"></span>
+            <p className="title">LOCATION.</p>
+            <span className="striped striped-2"></span>
+
+            <p className="content">At Tamarin Nurseries Garden & Cafe.</p>
+
+            <MapContainer />
+
+            <div className="btn-wrapper">
+              <button
+                type="button"
+                className="btn btn-active"
+                onClick={() => {
+                  window.open(
+                    "https://www.google.com/maps/place/Tamarin+Nurseries+Garden+%26+Cafe/@-6.2480897,106.7463335,15z/data=!4m5!3m4!1s0x0:0x5722837cd22ca824!8m2!3d-6.2480897!4d106.7463335",
+                    "_blank" // <- opens the link in a new tab or window.
+                  );
+                }}
+              >
+                See Location
+              </button>
+            </div>
+          </section>
+          <img className="icon-flag-3" src={FlagImg} alt="flag" />
 
           <section className="message">
             <p>

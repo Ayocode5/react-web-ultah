@@ -31,6 +31,7 @@ header {
   cursor: pointer;
   width: 24px;
   height: 14px;
+  visibility: hidden;
 }
 
 .icon-tape {
@@ -40,7 +41,7 @@ header {
 }
 
 .header__content .content {
-  font-family: 'Crimson Pro', serif;
+  font-family: "Crimson Pro", serif;
   position: relative;
   font-weight: 400;
   color: #f9fcff;
@@ -84,7 +85,7 @@ header {
   background: linear-gradient(
     233.29deg,
     rgba(208, 208, 208, 0.94) -2%,
-    #f7961d 87%
+    #f7501d 87%
   );
   box-shadow: 5px 6px 18px rgba(0, 0, 0, 0.25);
   z-index: 2;
@@ -111,13 +112,13 @@ header {
 
 .box-subtitle {
   margin-top: 8px;
-  font-family: 'Passion One', cursive;
+  font-family: "Passion One", cursive;
   font-size: 24px;
   font-weight: 400;
 }
 
 .box-location {
-  font-family: 'Passion One', cursive;
+  font-family: "Passion One", cursive;
   font-weight: 400;
   font-size: 16px;
   color: #007fff;
@@ -135,6 +136,13 @@ header {
   width: 100%;
   position: sticky;
   transform: translateY(-100px);
+  z-index: 0;
+}
+
+.icon-flag-3 {
+  width: 100%;
+  position: sticky;
+  transform: translateY(-20px);
   z-index: 0;
 }
 
@@ -156,7 +164,7 @@ header {
 
 .stories .content {
   margin-top: 16px;
-  font-family: 'Passion One', cursive;
+  font-family: "Passion One", cursive;
   font-size: 24px;
   font-weight: 400;
 }
@@ -184,12 +192,83 @@ header {
   margin: 0 auto;
 }
 
+.location {
+  position: relative;
+  text-align: center;
+  color: #f9fcff;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.location .title {
+  position: relative;
+  z-index: 1;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.location .content {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: "Passion One", cursive;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.location .striped {
+  background-color: #1e1e1e;
+  height: 2px;
+  width: 24px;
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+
+.location .striped-1 {
+  top: 10px;
+  left: -94px;
+  right: 0;
+  margin: 0 auto;
+}
+
+.location .striped-2 {
+  top: 14px;
+  right: -84px;
+  left: 0;
+  margin: 0 auto;
+}
+
+.location .btn-wrapper {
+  margin-top: 450px;
+}
+
+.location .btn {
+  width: 50%;
+  cursor: pointer;
+  height: 55px;
+  font-family: "Passion One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #787777;
+  background: #a6adb4;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+.location .btn-active {
+  background: #007fff !important;
+  color: #f9fcff !important;
+}
+
 .message {
   color: #000000;
   text-align: center;
   padding: 0 35px;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 50px auto;
   font-size: 20px;
 }
 
