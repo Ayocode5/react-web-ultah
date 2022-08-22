@@ -78,7 +78,8 @@ header {
   position: relative;
   height: auto;
   width: auto;
-  transform: translateY(-38px);
+  transform: translateY(-25px);
+  margin-right: 40px;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -128,7 +129,7 @@ header {
 .icon-flag {
   width: 100%;
   position: relative;
-  transform: translateY(-70px);
+  transform: translateY(-50px);
   z-index: 0;
 }
 
@@ -242,6 +243,7 @@ header {
 
 .location .btn-wrapper {
   margin-top: 450px;
+  position: relative;
 }
 
 .location .btn {
@@ -268,8 +270,31 @@ header {
   text-align: center;
   padding: 0 35px;
   max-width: 400px;
-  margin: 50px auto;
+  margin: 0 auto 60px auto;
   font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.message .message-author {
+  display: flex;
+  float: right;
+  max-width: 160px;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.message .person-img {
+  display: block;
+  width: 100%;
+  display: flex;
+  float: left;
+  margin-bottom: 100px;
+}
+
+.message .person-img img {
+  position: absolute;
+  height: 50vw;
 }
 
 #section__photos {
@@ -418,6 +443,12 @@ header {
   }
   #section__photos {
     width: 80vw;
+  }
+  .message .person-img {
+    display: none;
+  }
+  .message .message-author {
+    max-width: 400px;
   }
 }
 

@@ -63,12 +63,12 @@ function Welcome() {
             <div className="greeting">
               <div className="greeting-text">
                 <h1 className="greeting-hi">Hi,</h1>
-                <h1 className="greeting-name">Mr. {params.name}</h1>
+                <h1 className="greeting-name">Mr/Mrs. {params.name}</h1>
                 <h1 className="greeting-text">
                   My name is Frinz Arley, I would like to invite you to My 1st
                   Birthday Party on
                   <br />
-                  <span>17 September 20</span>
+                  <span>17 September 2022</span>
                 </h1>
               </div>
 

@@ -7,7 +7,6 @@ import TapeImg from "../../../assets/images/icons/icon_tape.svg";
 import CakeImg from "../../../assets/images/icons/icon_cake.svg";
 import ArrowRightImg from "../../../assets/images/icons/icon_arrow-right.svg";
 import FlagImg from "../../../assets/images/icons/icon_flag.svg";
-import LoveImg from "../../../assets/images/icons/icon_love.svg";
 import Image1 from "../../../assets/images/thumbs/photo-1.png";
 import Image2 from "../../../assets/images/thumbs/photo-2.png";
 import Image3 from "../../../assets/images/thumbs/photo-3.png";
@@ -15,6 +14,7 @@ import Image4 from "../../../assets/images/thumbs/photo-4.png";
 import Image5 from "../../../assets/images/thumbs/photo-5.png";
 import Image6 from "../../../assets/images/thumbs/photo-6.png";
 import Image7 from "../../../assets/images/thumbs/photo-7.png";
+import Person from "../../../assets/images/thumbs/person.png";
 import { MapContainer } from "../../Map/Map";
 
 import "./Main.css";
@@ -166,7 +166,7 @@ function Main() {
                 className="btn btn-active"
                 onClick={() => {
                   window.open(
-                    "https://www.google.com/maps/place/Tamarin+Nurseries+Garden+%26+Cafe/@-6.2480897,106.7463335,15z/data=!4m5!3m4!1s0x0:0x5722837cd22ca824!8m2!3d-6.2480897!4d106.7463335",
+                    "https://goo.gl/maps/PZ4MwWFDVDPz7Mqv8",
                     "_blank" // <- opens the link in a new tab or window.
                   );
                 }}
@@ -178,15 +178,18 @@ function Main() {
           <img className="icon-flag-3" src={FlagImg} alt="flag" />
 
           <section className="message">
-            <p>
-              “It will be a gift for me if you can present at My Birthday Party,
-              I am looking forward to your presence.” <br />
-              <br />
-              <br />
-              With
-              <img src={LoveImg} alt="love" />
+            <figure className="person-img">
+              <img src={Person} alt="person" />
+            </figure>
+            <div className="message-author">
+              <p>
+                “It will be a gift for me if you can present at My Birthday
+                Party, I am looking forward to your presence.” <br />
+                <br />
+                With 💜
+              </p>
               <br />- Frinz Arley -
-            </p>
+            </div>
           </section>
         </div>
       </main>
