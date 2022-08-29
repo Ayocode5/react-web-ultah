@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 function MainFooter() {
   return (
-    <footer>
+    <footer style={{ backgroundColor: "#0b0d7b" }}>
       <p>
         Made with ❤️ By Ayocode.id <br />| All Right Reserved.
       </p>

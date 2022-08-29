@@ -1,0 +1,55 @@
+.boarding-page {
+  display: flex;
+  align-items: center;
+}
+
+.boarding-page .container {
+  margin: 0 auto;
+  overflow: unset;
+}
+.boarding-page .container .content {
+  margin-top: 0;
+  overflow: unset;
+}
+
+.boarding-page .container .content h1 {
+  color: #0b0d7b;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.boarding-page .container .content p {
+  text-align: center;
+  color: rgb(205, 78, 78);
+  margin-top: 20px;
+}
+
+.boarding-page .container .content .plane {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  margin-top: 80px;
+  overflow: unset;
+  animation: plane2 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease-in-out -1.25s infinite;
+}
+
+@keyframes plane2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}

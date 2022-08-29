@@ -7,13 +7,13 @@ import TapeImg from "../../../assets/images/icons/icon_tape.svg";
 import CakeImg from "../../../assets/images/icons/icon_cake.svg";
 import ArrowRightImg from "../../../assets/images/icons/icon_arrow-right.svg";
 import FlagImg from "../../../assets/images/icons/icon_flag.svg";
-import Image1 from "../../../assets/images/thumbs/photo-1.png";
-import Image2 from "../../../assets/images/thumbs/photo-2.png";
-import Image3 from "../../../assets/images/thumbs/photo-3.png";
-import Image4 from "../../../assets/images/thumbs/photo-4.png";
-import Image5 from "../../../assets/images/thumbs/photo-5.png";
-import Image6 from "../../../assets/images/thumbs/photo-6.png";
-import Image7 from "../../../assets/images/thumbs/photo-7.png";
+import Image1 from "../../../assets/images/thumbs/photo-1.jpg";
+import Image2 from "../../../assets/images/thumbs/photo-2.jpg";
+import Image3 from "../../../assets/images/thumbs/photo-3.jpg";
+import Image4 from "../../../assets/images/thumbs/photo-4.jpg";
+import Image5 from "../../../assets/images/thumbs/photo-5.jpg";
+import Image7 from "../../../assets/images/thumbs/photo-7.jpg";
+import Image6 from "../../../assets/images/thumbs/photo-6.jpg";
 import Person from "../../../assets/images/thumbs/person.png";
 import { MapContainer } from "../../Map/Map";
 
@@ -63,7 +63,7 @@ function Main() {
               <p className="box-title">Date & Time:</p>
               <p className="box-subtitle">
                 Saturday, <br />
-                17 Sep 2022 | 15:00 - Selesai
+                17 Sep 2022 | 15:00 - Finish
               </p>
             </div>
             <div className="box">
@@ -88,7 +88,7 @@ function Main() {
             <span className="striped striped-2"></span>
 
             <p className="content">
-              On September 17, 2021, at 17:30, God showed his love for the
+              On September 17, 2021, at 07:00, God showed his love for the
               couple Mr. Okta and Mrs. Veronica by giving them a blessing in the
               form of a son named <br />
               Frinz Arley.
@@ -107,14 +107,14 @@ function Main() {
               <li className="photo" id="photo_2">
                 <div className="photo__content">
                   <figure>
-                    <img src={Image2} alt="baby 2" />
+                    <img src={Image3} alt="baby 2" />
                   </figure>
                 </div>
               </li>
               <li className="photo" id="photo_3">
                 <div className="photo__content">
                   <figure>
-                    <img src={Image3} alt="baby 3" />
+                    <img src={Image2} alt="baby 3" />
                   </figure>
                 </div>
               </li>
@@ -128,7 +128,7 @@ function Main() {
               <li className="photo" id="photo_5">
                 <div className="photo__content">
                   <figure>
-                    <img src={Image5} alt="baby 5" />
+                    <img src={Image7} alt="baby 5" />
                   </figure>
                 </div>
               </li>
@@ -142,7 +142,7 @@ function Main() {
               <li className="photo" id="photo_7">
                 <div className="photo__content">
                   <figure>
-                    <img src={Image7} alt="baby 7" />
+                    <img src={Image5} alt="baby 7" />
                   </figure>
                 </div>
               </li>

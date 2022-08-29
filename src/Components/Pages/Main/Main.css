@@ -266,34 +266,29 @@ header {
 }
 
 .message {
-  color: #000000;
+  color: #be1e2d;
   text-align: center;
   padding: 0 35px;
   max-width: 400px;
-  margin: 0 auto 60px auto;
+  margin: 60px auto;
   font-size: 20px;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
 .message .message-author {
-  display: flex;
-  float: right;
   max-width: 160px;
   flex-direction: column;
-  margin-top: 100px;
 }
 
 .message .person-img {
   display: block;
   width: 100%;
-  display: flex;
-  float: left;
-  margin-bottom: 100px;
 }
 
 .message .person-img img {
-  position: absolute;
+  /* position: absolute; */
   height: 50vw;
 }
 
@@ -444,9 +439,6 @@ header {
   #section__photos {
     width: 80vw;
   }
-  .message .person-img {
-    display: none;
-  }
   .message .message-author {
     max-width: 400px;
   }
@@ -455,6 +447,9 @@ header {
 @media screen and (min-width: 576px) {
   .icon-flag-2 {
     transform: translateY(-190px);
+  }
+  .message .person-img {
+    display: none;
   }
 }
 

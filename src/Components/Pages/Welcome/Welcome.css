@@ -1,5 +1,5 @@
 .welcome-page {
-  background-image: url('../../../assets/images/thumbs/welcome-bg.png');
+  background-image: url("../../../assets/images/thumbs/welcome-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -30,7 +30,7 @@
   justify-content: center;
   text-align: center;
   margin: 0;
-  font-family: 'Passion One', cursive;
+  font-family: "Passion One", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -40,7 +40,7 @@
 .greeting {
   margin-top: 64px;
   width: 100%;
-  font-family: 'Passion One', cursive;
+  font-family: "Passion One", cursive;
 }
 
 .greeting-text {
@@ -81,11 +81,11 @@
 }
 
 .checkbox-label {
-  font-family: 'Passion One', cursive;
+  font-family: "Passion One", cursive;
   font-style: normal;
   font-size: 18px;
   text-align: justify;
-  color: #464646;
+  color: #0b0d7b;
   margin-left: 14px;
 }
 
@@ -97,7 +97,7 @@
   width: 100%;
   cursor: pointer;
   height: 55px;
-  font-family: 'Passion One', cursive;
+  font-family: "Passion One", cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -135,9 +135,9 @@
 
 .approve {
   --background: #fff;
-  --border: #464646;
+  --border: #0b0d7b;
   --border-hover: #ffffff;
-  --border-active: #1e2235;
+  --border-active: #0b0d7b;
   --tick: #fff;
   position: relative;
 }

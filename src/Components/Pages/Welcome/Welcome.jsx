@@ -31,7 +31,7 @@ function Welcome() {
     const interval = setInterval(() => {
       setIsLoading(false);
       document.body.style.overflow = "unset";
-    }, 5000);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
