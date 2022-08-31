@@ -5,6 +5,7 @@ import LoadingBounce from "./LoadingBounce/LoadingBounce";
 import RibbonImg from "../../../assets/images/icons/ribbon.svg";
 import BabyPicture from "../../../assets/images/thumbs/pic.png";
 import MainFooter from "../../Footer/MainFooter";
+import laguPesawat from "../../../assets/sounds/lagu_pesawat.mp3";
 import "./Welcome.css";
 
 function Welcome() {
@@ -12,6 +13,7 @@ function Welcome() {
   const [approve, setApprove] = useState(false);
   const navigate = useNavigate();
   const params = useParams();
+  const audio = new Audio(laguPesawat);
 
   const handleApprove = () => {
     setApprove(!approve);
@@ -20,6 +22,7 @@ function Welcome() {
   const handleButtonClick = () => {
     if (approve) {
       navigate(`/invitation/${params.name}`, { replace: true });
+      audio.play();
     } else {
       alert("Please approve the terms and conditions");
     }
