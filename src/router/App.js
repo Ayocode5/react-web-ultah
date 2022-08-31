@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route, useNavigate, useParams } from "react-router-dom";
-import Boarding from "../Components/Pages/Boarding/Boarding";
-import Enjoy from "../Components/Pages/Boarding/Enjoy";
-import InputName from "../Components/Pages/InputName/InputName";
+// import Boarding from "../Components/Pages/Boarding/Boarding";
+// import Enjoy from "../Components/Pages/Boarding/Enjoy";
+// import InputName from "../Components/Pages/InputName/InputName";
 import Main from "../Components/Pages/Main/Main";
 import Welcome from "../Components/Pages/Welcome/Welcome";
 import LoadingBounce from "../Components/Pages/Welcome/LoadingBounce/LoadingBounce";
@@ -20,8 +20,9 @@ function App() {
         <Route path="/enjoy" element={<Enjoy />} /> */}
         {/* Main Web */}
         {/* <Route path="/" element={<InputName />} /> */}
-        <Route path="/" element={<Home />} />t
+        <Route path="/" element={<Home />} />
         <Route path="/:name" element={<Welcome />} />
+
         <Route path="/invitation/:name" element={<Main />} />
       </Routes>
     </>
